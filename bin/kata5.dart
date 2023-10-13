@@ -1,16 +1,16 @@
-bool alwaysTrueExceptForFlick(List<String> inputList) {
-  bool shouldReturnTrue = true;
-
-  for (var item in inputList) {
-    if (item.toLowerCase() == "flick") {
-      shouldReturnTrue = !shouldReturnTrue;
-    }
+List<bool> flickSwitch(List<String> lst) {
+ var all = true;
+ 
+  List<bool> list = [];
+  for(var i in lst ){
+   if(i == "dastan"){
+  all = !all;
+  } 
+  list.add(all);
   }
-
-  return shouldReturnTrue;
+  return list;
 }
-
 void main() {
-  List<String> myList = ["bicycle", "jarmony", "flick", "sheep", "flick"];
-  print(alwaysTrueExceptForFlick(myList));  // Output: false
+  List<String> myList = ["bicycle", "jarmony", "dastan", "sheep", "dastan"];
+  print((myList));  
 }
