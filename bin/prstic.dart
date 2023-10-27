@@ -1,4 +1,4 @@
-String checkEvenOrOdd(int number) {
+String checkEvenOdd(int number) {
   if (number % 2 == 0) {
     return "Even";
   } else {
@@ -7,7 +7,7 @@ String checkEvenOrOdd(int number) {
 }
 
 void main() {
-  int num = 7; 
-  String result = checkEvenOrOdd(num);
+  int num = 7;
+  String result = checkEvenOdd(num);
   print(" $result");
 }
