@@ -1,22 +1,21 @@
-void main() async {
-  final String apiUrl = 'https://jsonplaceholder.typicode.com/posts/1';
+import 'package:http/http.dart';
+
+void main(List<String> args) async {
+  // const url = "https://pub.dev/packages/http";
+  // final uri = Uri.parse(url);
+  // final client = Client();
+  // final response = await client.get(uri);
+  // print(response);
+  // print(response.body);
 
   try {
-    // Отправка GET-запроса
-    var http;
-    final response = await http.get(Uri.parse(apiUrl));
-
-    if (response.statusCode == 200) {
-      // Если запрос успешен (статус код 200), обработаем ответ
-      print('Заголовок: ${response.headers['content-type']}');
-      print('Тело ответа: ${response.body}');
-    } else {
-      // В случае ошибки, выведем статус-код и сообщение об ошибке
-      print('Ошибка: Статус код ${response.statusCode}');
-      print('Сообщение об ошибке: ${response.reasonPhrase}');
-    }
+    const url = "https://pub.dev/packages/htt";
+    final uri = Uri.parse(url);
+    final client = Client();
+    final response = await client.get(uri);
+    print(response);
+    print(response.body);
   } catch (e) {
-    // Обработка ошибки при отправке запроса
-    print('Произошла ошибка при отправке запроса: $e');
+    print("Ссылке есть ощибка");
   }
 }
