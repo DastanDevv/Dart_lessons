@@ -11,7 +11,7 @@ int countDivisors(int n) {
 void main() {
   int n = 12;
   int result = countDivisors(n);
-  print(result); // Выведет 3, так как делителями числа 4 являются 1, 2 и 4.
+  print(result);
 }
 
 int countVowels(String inputString) {
