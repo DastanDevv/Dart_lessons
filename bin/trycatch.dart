@@ -1,18 +1,19 @@
-// import 'package:http/http.dart';
+import 'package:http/http.dart';
 
 // 1-exemple
-// void main(List<String> args) async {
-//   try {
-//     const url = "https://pub.dev/packages/htt";
-//     final uri = Uri.parse(url);
-//     final client = Client();
-//     final response = await client.get(uri);
-//     print(response);
-//     print(response.body);
-//   } catch (e) {
-//     print("Ссылке есть ощибка");
-//   }
-// }
+
+void main(List<String> args) async {
+  try {
+    const url = "https://pub.dev/";
+    final uri = Uri.parse(url);
+    final client = Client();
+    final response = await client.get(uri);
+    print(response);
+    print(response.body);
+  } catch (e) {
+    print("error 404 Ссылке есть ощибка");
+  }
+}
 
 // 2-exemple
 

@@ -1,6 +1,6 @@
 String joinWords(List<String> words) {
   if (words.isEmpty) {
-    return ""; 
+    return "";
   }
   String sentence = words.join(" ");
   sentence = sentence.trim();
@@ -10,5 +10,5 @@ String joinWords(List<String> words) {
 void main() {
   List<String> words = ["Hello", "World", "Dastan"];
   String sentence = joinWords(words);
-  print(sentence); 
+  print(sentence);
 }
