@@ -8,3 +8,7 @@ List<String> capitalize(String x) {
   }
   return [even.join(), odd.join()];
 }
+
+void main() {
+  print(capitalize("dastan"));
+}
