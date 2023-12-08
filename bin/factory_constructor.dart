@@ -2,7 +2,7 @@
 // hashcode сравнение
 // Метод hashCode расчитывает и возвращает хэш-код данного объекта
 class User {
-  int id;
+  int id = 0;
 
   User(this.id);
 }
